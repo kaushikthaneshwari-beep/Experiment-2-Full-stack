@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banking UI</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f4f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .banking-container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .balance {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #eaf3ff;
+      border: 2px solid #0077cc;
+      border-radius: 10px;
+      color: #003d66;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .buttons button {
+      flex: 1;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .deposit {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .deposit:hover {
+      background-color: #218838;
+    }
+
+    .withdraw {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .withdraw:hover {
+      background-color: #c82333;
+    }
+
+    @media (max-width: 500px) {
+      .buttons {
+        flex-direction: column;
+      }
+
+      .buttons button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banking-container">
+    <div class="balance">
+      Current Balance: $5,000
+    </div>
+    <div class="buttons">
+      <button class="deposit">Deposit</button>
+      <a href="/withdraw.html"><button class="withdraw">Withdraw</button></a>
+    </div>
+  </div>
+</body>
+</html>
